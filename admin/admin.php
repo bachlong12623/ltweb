@@ -21,6 +21,7 @@
 			include "../connect/conn.php";
 			$sql = "SELECT * FROM `tin_tuc`";
 			$query = mysqli_query($conn,$sql);
+			print_r($query);
 			while($row = mysqli_fetch_array($query)){
 
 			?>
