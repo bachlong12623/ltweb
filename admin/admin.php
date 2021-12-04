@@ -25,10 +25,10 @@
 			while($row = mysqli_fetch_array($query)){
 
 			?>
-			<td><?php $row['MST'] ?></td>
-			<td><?php $row['Hinh_Anh'] ?></td>
-			<td><?php $row['Tieu_De'] ?></td>
-			<td><?php $row['Noi_Dung'] ?></td>
+			<td><?php echo $row['MST'] ?></td>
+			<td><?php echo $row['Hinh_Anh'] ?></td>
+			<td><?php echo $row['Tieu_De'] ?></td>
+			<td><?php echo $row['Noi_Dung'] ?></td>
 			<?php } ?>
 		</tr>
 	</table>
