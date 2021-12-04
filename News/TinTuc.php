@@ -7,14 +7,15 @@
     <title>Thêm Tin Tức</title>
 </head>
 <body>
-    <?php require_once 'connect/conn.php'?>
+    <?php require_once '../connect/conn.php'?>
     <?php
         if(isset($_POST['add'])){
              $hinhanh = $_POST['Hinhanh'];
              $tieude = $_POST['TieuDe'];
              $noidung = $_POST['NoiDung'];
 
-             if($conn -> query("INSERT INTO bc_10/12 (Hinh_Anh,Tieu_De,Noi_Dung) VALUES (N'$hinhanh',N'$tieude',N'noidung')")){
+             if($conn -> query("INSERT INTO `tin_tuc` (`MST`, `Hinh_Anh`, `Tieu_De`, `Noi_Dung`) VALUES (NULL, '$hinhanh', '$tieude', '$noidung')
+             ")){
                  echo "<script>alert('Thêm Thành Công!');</script>";
              }else{
                  echo "<script>alert('Thêm Thất Bại!');</script>";

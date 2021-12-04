@@ -10,7 +10,6 @@ if (isset($_POST['dangnhap'])) {
     echo "Vui lòng nhập đầy đủ tên đăng nhập và mật khẩu. <a href='javascript: history.go(-1)'>Trở lại</a>";
     exit;
   }
-  $password = md5($password);
   $sql = "SELECT user, pass from taiKhoan where user = '$username'";
   $query = mysqli_query($conn, $sql);
   if (mysqli_num_rows($query) == 0) {
@@ -43,9 +42,6 @@ die();
 <body>
 	
 
-<?php
-    require 'diana/conn.php';
-    ?>
     <div style="
           margin: auto;
           width: 50%;
@@ -73,9 +69,6 @@ die();
           </tr>
         </table>
         <input type='submit' name="dangnhap" value='Đăng nhập' />
-        <a href='dangky.php' title='Đăng ký'>Đăng ký</a>
-        <a href='destroy.php' title='Đăng ký'>Đăng xuẩt</a>
-
       </form>
     </div>
 
