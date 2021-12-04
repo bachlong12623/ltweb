@@ -1,0 +1,10 @@
+.container {
+    align-items: center;
+    margin: auto;
+    width: 50%;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+}
