@@ -14,9 +14,9 @@
 	<div class="container">
 	<div class="menu">
 		<ul>
-			<li> <a href="">Xem tin</a>
+			<li> <a href="admin.php">Xem tin</a>
 			</li>
-			<li> <a href="">Thêm tin</a></li>
+			<li> <a href="../News/TinTuc.php">Thêm tin</a></li>
 		</ul>
 	</div>
 		<table border="1">
