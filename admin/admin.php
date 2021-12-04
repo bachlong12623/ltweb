@@ -7,21 +7,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Admin</title>
 	<link rel="stylesheet" href="../css/admin.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 	<div class="container">
+	<div class="menu">
 		<ul>
-			<li><a href="admin.php">Xem tin</a></li>
-			<li><a href="">Them tin</a></li>
-			
+			<li> <a href="">Xem tin</a>
+			</li>
+			<li> <a href="">Thêm tin</a></li>
 		</ul>
-		<table>
+	</div>
+		<table border="1">
 			<tr>
 				<th>MST</th>
 				<th>Hinh anh</th>
 				<th>Tieu de</th>
 				<th>Noi dung</th>
+				<th>Xóa</th>
 			</tr>
 			<tr>
 				<?php
@@ -36,6 +40,7 @@
 				<td> <img src="<?php echo $row['Hinh_Anh'] ?>" alt="Sai sai cmnr"></td>
 				<td><?php echo $row['Tieu_De'] ?></td>
 				<td><?php echo $row['Noi_Dung'] ?></td>
+				<td><a href="delete_news.php?id=<?php echo $row['MST'] ?>"><i class="fa fa-trash-o"></i></a></td>
 			</tr>
 		<?php } ?>
 		</tr>
