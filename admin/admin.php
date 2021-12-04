@@ -11,7 +11,11 @@
 
 <body>
 	<div class="container">
-
+		<ul>
+			<li><a href="admin.php">Xem tin</a></li>
+			<li><a href="">Them tin</a></li>
+			
+		</ul>
 		<table>
 			<tr>
 				<th>MST</th>
@@ -29,8 +33,7 @@
 				?>
 			<tr>
 				<td><?php echo $row['MST'] ?></td>
-				<td><a href=""></a></td>
-				<td><?php echo $row['Hinh_Anh'] ?></td>
+				<td> <img src="<?php echo $row['Hinh_Anh'] ?>" alt="Sai sai cmnr"></td>
 				<td><?php echo $row['Tieu_De'] ?></td>
 				<td><?php echo $row['Noi_Dung'] ?></td>
 			</tr>
