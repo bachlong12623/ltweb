@@ -42,6 +42,18 @@
 				<input name="NoiDung" class="form-control" placeholder="Nội Dung">
 			</div>
 			<button type="submit" class="btn btn-primary" name="add">Thêm</button>
+			<tr>
+			   <td width="91">Loại Tin
+				   <form id='form1' name='form1' mehtod='post'  action=''>
+					   <select name='select'>
+						   <option>Thể Thao</option>
+						   <option>Giải Trí</option>
+						   <option>Thương Mại</option>
+						   <option>Y Tế</option>
+						   <option>Thế Giới</option>
+                       </select>
+                   </form></td>
+            </tr>
 		</form>
 	</div>
 </body>
