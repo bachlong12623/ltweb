@@ -11,20 +11,22 @@
 <body>
 	<?php require_once '../connect/conn.php' ?>
 	<?php
-    if (isset($_POST['add'])) {
-        $hinhanh = $_POST['Hinhanh'];
-        $tieude = $_POST['TieuDe'];
-        $noidung = $_POST['NoiDung'];
+	if (isset($_POST['add'])) {
+		$hinhanh = $_POST['Hinhanh'];
+		$tieude = $_POST['TieuDe'];
+		$noidung = $_POST['NoiDung'];
+		$loaitin = $_POST['LoaiTin'];
+		echo $loaitin;
 
-        if ($conn->query("INSERT INTO `tin_tuc` (`MST`, `Hinh_Anh`, `Tieu_De`, `Noi_Dung`) VALUES (NULL, '$hinhanh', '$tieude', '$noidung')
-             ")) {
-            echo "<script>alert('Thêm Thành Công!');</script>";
-        } else {
-            echo "<script>alert('Thêm Thất Bại!');</script>";
-        }
-    }
-    $conn->close();
-    ?>
+VALUES (NULL, '$loaitin', '$hinhanh', '$tieude', '$noidung')";
+		if ($conn->query($sql)) {
+			echo "<script>alert('Thêm Thành Công!');</script>";
+		} else {
+			echo "<script>alert('Thêm Thất Bại!');</script>";
+		}
+	}
+	$conn->close();
+	?>
 
 
 	<div class="container">
@@ -41,19 +43,17 @@
 				<label for="NoiDung">Noi_Dung</label>
 				<input name="NoiDung" class="form-control" placeholder="Nội Dung">
 			</div>
+			<label for="tripName">Loai tin: </label>
+
+			<select name='LoaiTin'>
+				<option value="Thể thao">Thể Thao</option>
+				<option value="Giải trí">Giải Trí</option>
+				<option value="Thương mại">Thương Mại</option>
+				<option value="Y tế">Y Tế</option>
+				<option value="Thế giới">Thế Giới</option>
+			</select>
 			<button type="submit" class="btn btn-primary" name="add">Thêm</button>
-			<tr>
-			   <td width="91">Loại Tin
-				   <form id='form1' name='form1' mehtod='post'  action=''>
-					   <select name='select'>
-						   <option>Thể Thao</option>
-						   <option>Giải Trí</option>
-						   <option>Thương Mại</option>
-						   <option>Y Tế</option>
-						   <option>Thế Giới</option>
-                       </select>
-                   </form></td>
-            </tr>
+
 		</form>
 	</div>
 </body>
