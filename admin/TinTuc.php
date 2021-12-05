@@ -52,6 +52,7 @@ VALUES (NULL, '$loaitin', '$hinhanh', '$tieude', '$noidung')";
 				<option value="ThuongMai">Thương Mại</option>
 				<option value="YTe">Y Tế</option>
 				<option value="TheGioi">Thế Giới</option>
+				<button></button>
 			</select>
             <button type ='submit' class='btn btn-primary'name='add'>Thêm</button>
 		</form>
