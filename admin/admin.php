@@ -12,13 +12,13 @@
 
 <body>
 	<div class="container">
-	<div class="menu">
-		<ul>
-			<li> <a href="admin.php">Xem tin</a>
-			</li>
-			<li> <a href="TinTuc.php">Thêm tin</a></li>
-		</ul>
-	</div>
+		<div class="menu">
+			<ul>
+				<li> <a href="admin.php">Xem tin</a>
+				</li>
+				<li> <a href="TinTuc.php">Thêm tin</a></li>
+			</ul>
+		</div>
 		<table border="1">
 			<tr>
 				<th>MST</th>
@@ -33,17 +33,16 @@
 				$sql = "SELECT * FROM `tin_tuc`";
 				$query = mysqli_query($conn, $sql);
 				while ($row = mysqli_fetch_array($query)) {
-
 				?>
 			<tr>
 				<td><?php echo $row['MST'] ?></td>
-				<td> <img src="<?php echo $row['Hinh_Anh'] ?>" alt="Sai sai cmnr"></td>
+				<td><img src="<?php echo $row['Hinh_Anh'] ?>" alt="Sai sai cmnr"></td>
 				<td><?php echo $row['Tieu_De'] ?></td>
-				<td><?php echo $row['Noi_Dung'] ?></td>
+				<td style="    width: 500px ;"><?php echo substr($row['Noi_Dung'], 0, 100) ?></td>
 				<td><a href="delete_news.php?id=<?php echo $row['MST'] ?>"><i class="fa fa-trash-o"></i></a></td>
 			</tr>
-		<?php } ?>
-		</tr>
+			<?php } ?>
+			</tr>
 		</table>
 	</div>
 </body>
