@@ -46,7 +46,6 @@ VALUES (NULL, '$loaitin', '$hinhanh', '$tieude', '$noidung')";
 			</div>
 			<label for="tripName">Loai tin: </label>
 
-
 			<select name='LoaiTin'>
 				<option value="TheThao">Thể Thao</option>
 				<option value="GiaiTri">Giải Trí</option>
@@ -54,7 +53,7 @@ VALUES (NULL, '$loaitin', '$hinhanh', '$tieude', '$noidung')";
 				<option value="YTe">Y Tế</option>
 				<option value="TheGioi">Thế Giới</option>
 			</select>
-
+            <button type ='submit' class='btn btn-primary'name='add'>Thêm</button>
 		</form>
 	</div>
 </body>
