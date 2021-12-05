@@ -1,5 +1,4 @@
 
-    <nav>
         <div class="container">
             <div class="row">
                 <div class="menu-box">
@@ -16,4 +15,3 @@
                 </div>
             </div>
         </div>
-    </nav>
