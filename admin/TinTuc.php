@@ -47,11 +47,11 @@ VALUES (NULL, '$loaitin', '$hinhanh', '$tieude', '$noidung')";
 			<label for="tripName">Loai tin: </label>
 
 			<select name='LoaiTin'>
-				<option value="Thể thao">Thể Thao</option>
-				<option value="Giải trí">Giải Trí</option>
-				<option value="Thương mại">Thương Mại</option>
-				<option value="Y tế">Y Tế</option>
-				<option value="Thế giới">Thế Giới</option>
+				<option value="TheThao">Thể Thao</option>
+				<option value="GiaiTri">Giải Trí</option>
+				<option value="ThuongMai">Thương Mại</option>
+				<option value="YTe">Y Tế</option>
+				<option value="TheGioi">Thế Giới</option>
 			</select>
 			<button type="submit" class="btn btn-primary" name="add">Thêm</button>
 
