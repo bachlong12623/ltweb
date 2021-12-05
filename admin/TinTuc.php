@@ -11,23 +11,20 @@
 <body>
 	<?php require_once '../connect/conn.php' ?>
 	<?php
-	if (isset($_POST['add'])) {
-		$hinhanh = $_POST['Hinhanh'];
-		$tieude = $_POST['TieuDe'];
-		$noidung = $_POST['NoiDung'];
-		$loaitin = $_POST['LoaiTin'];
-		echo $loaitin;
+    if (isset($_POST['add'])) {
+        $hinhanh = $_POST['Hinhanh'];
+        $tieude = $_POST['TieuDe'];
+        $noidung = $_POST['NoiDung'];
 
-$sql = "INSERT INTO `tin_tuc` (`MST`, `Loai_Tin`, `Hinh_Anh`, `Tieu_De`, `Noi_Dung`)
-VALUES (NULL, '$loaitin', '$hinhanh', '$tieude', '$noidung')";
-		if ($conn->query($sql)) {
-			echo "<script>alert('Thêm Thành Công!');</script>";
-		} else {
-			echo "<script>alert('Thêm Thất Bại!');</script>";
-		}
-	}
-	$conn->close();
-	?>
+        if ($conn->query("INSERT INTO `tin_tuc` (`MST`, `Hinh_Anh`, `Tieu_De`, `Noi_Dung`) VALUES (NULL, '$hinhanh', '$tieude', '$noidung')
+             ")) {
+            echo "<script>alert('Thêm Thành Công!');</script>";
+        } else {
+            echo "<script>alert('Thêm Thất Bại!');</script>";
+        }
+    }
+    $conn->close();
+    ?>
 
 
 	<div class="container">
@@ -53,8 +50,6 @@ VALUES (NULL, '$loaitin', '$hinhanh', '$tieude', '$noidung')";
 				<option value="YTe">Y Tế</option>
 				<option value="TheGioi">Thế Giới</option>
 			</select>
-			<button type="submit" class="btn btn-primary" name="add">Thêm</button>
-
 		</form>
 	</div>
 </body>

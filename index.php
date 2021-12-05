@@ -10,10 +10,11 @@
 </head>
 
 <body>
-    <?php
-    include "block/header.php";
-    ?>
-    <div style="   justify-content: center;
+<?php 
+include "block/header.php";
+?>
+
+<div style="   justify-content: center;
 ">
 
         <div class="news-block">

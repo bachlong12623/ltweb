@@ -6,11 +6,10 @@
                     <div class="nav-menu">
                         <ul id="menu">
                             <li><a href="index.php">Trang chủ</a></li>
-                            <li><a href="index.php?url=datve">Thể thao</a></li>
-                            <li><a href="index.php?url=huongdan">Giải trí</a></li>
-                            <li><a href="index.php?url=dangki">Y tế</a></li>
-                            <li><a href="index.php?url=lienhe">Thế giới</a></li>
-                            <li><a href="index.php?url=lienhe">Thương mại</a></li>
+                            <li><a href="index.php?url=datve">Đặt vé Online</a></li>
+                            <li><a href="index.php?url=huongdan">Hướng dẫn đặt vé</a></li>
+                            <li><a href="index.php?url=dangki">Đăng ký đại lý</a></li>
+                            <li><a href="index.php?url=lienhe">Liên hệ</a></li>
                         </ul>
                     </div>
                 </div>
