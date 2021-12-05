@@ -42,7 +42,6 @@
 				<input name="NoiDung" class="form-control" placeholder="Nội Dung">
 			</div>
 			<label for="tripName">Loai tin: </label>
-
 			<select name='LoaiTin'>
 				<option value="TheThao">Thể Thao</option>
 				<option value="GiaiTri">Giải Trí</option>
