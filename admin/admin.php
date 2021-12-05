@@ -16,7 +16,7 @@
 		<ul>
 			<li> <a href="admin.php">Xem tin</a>
 			</li>
-			<li> <a href="../News/TinTuc.php">Thêm tin</a></li>
+			<li> <a href="TinTuc.php">Thêm tin</a></li>
 		</ul>
 	</div>
 		<table border="1">
