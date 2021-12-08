@@ -5,5 +5,6 @@
        $result=mysqli_query($conn,$sql);
        return $result;
  }
- function tintheoloai($Loai_Tin,$conn)
+ 
+ 
 ?>
