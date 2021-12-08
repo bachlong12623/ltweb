@@ -1,4 +1,9 @@
 <?php
+session_start();
+if(!isset($_SESSION['username']))
+header("Location: login.php");
+?>
+<?php
 $url = $_GET['id'];
 include '../connect/conn.php';
 if(mysqli_query($conn,"DELETE FROM `tin_tuc` WHERE `tin_tuc`.`MST` = $url"))
