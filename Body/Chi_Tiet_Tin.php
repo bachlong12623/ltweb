@@ -15,14 +15,14 @@ require '../block/index_func.php';
 </head>
 
 <body>
-    
+
     <?php
     include "../block/header.php";
     ?>
-     <div class= container>
-         
-     </div>
-     
+    <div class=container>
+        
+    </div>
+
 
 </body>
 
