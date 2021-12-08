@@ -1,0 +1,33 @@
+.containerr{
+    display: flex;
+}
+.center{
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.left{
+    width: 25%;
+}
+.right{
+    width: 25%;
+}
+.left h3{
+    color: aqua;
+}
+body{
+    background-image:url('https://carloscucinaitaliana.com/wp-content/uploads/2015/03/newspaper-background.jpg') ;
+}
+.fix{
+    display: flex;
+}
+.fix img{
+    max-width: 500px;
+    margin: 10px ;
+    border:solid rgb(89, 71, 255);
+}
+.fix div{
+    margin-top: 10px;
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+}
