@@ -1,6 +1,5 @@
 <?php
 require '../connect/conn.php';
-require '../block/index_func.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
