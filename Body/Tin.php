@@ -5,7 +5,7 @@
      <div class=fix>
        <img src="<?php echo $tin['Hinh_Anh'] ?>" alt="">
        <div>
-         <a href="#"><?php echo $tin['Tieu_De']; ?></a>
+         <a href="#"><b><?php echo $tin['Tieu_De']; ?></b></a>
        </div>
      </div>
    <?php
