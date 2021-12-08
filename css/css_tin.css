@@ -12,8 +12,9 @@
 .right{
     width: 25%;
 }
-.left h3{
-    color: aqua;
+ h1{
+    color: rgb(253, 5, 25);
+    margin-left: 5px;
 }
 body{
     background-image:url('https://carloscucinaitaliana.com/wp-content/uploads/2015/03/newspaper-background.jpg') ;
@@ -22,12 +23,22 @@ body{
     display: flex;
 }
 .fix img{
-    max-width: 500px;
+    width: 400px;
     margin: 10px ;
     border:solid rgb(89, 71, 255);
 }
 .fix div{
     margin-top: 10px;
-    font-size: 28px;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.fixed img{
+    margin-left: 10px;
+    width: 450px;
+    border:solid rgb(89, 71, 255);
+}
+.fixed div{
+    margin-left: 5px;
+    font-size: 24px;
     font-family: 'Times New Roman', Times, serif;
 }
