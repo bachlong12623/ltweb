@@ -1,6 +1,5 @@
 <?php
 require '../connect/conn.php';
-require '../block/index_func.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,9 +18,9 @@ require '../block/index_func.php';
     <?php
     include "../block/header.php";
     ?>
-     <div class= container>
-         
-     </div>
+    <div class= container>
+        
+    </div>
      
 
 </body>
