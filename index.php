@@ -21,7 +21,7 @@ require 'block/index_func.php';
     ?>
     <div class=containerr>
         <div class=left>
-            <h1>Tin Thế Giới >></h1>
+            <h3>Tin Thế Giới >></h3>
             <?php
             $sql = "select * from tin_tuc where Loai_Tin = 'TheGioi' order by MST desc limit 5";
             $result = mysqli_query($conn, $sql);
@@ -38,13 +38,13 @@ require 'block/index_func.php';
             ?>
         </div>
         <div class=center>
-            <h1>Tin Tổng Hợp Trong Ngày >></h1>
+            <h3>Tin Tổng Hợp Trong Ngày >></h3>
             <?php
             require 'Body/Tin.php';
             ?>
         </div>
         <div class=right>
-            <h1>Tin Thể Thao >></h1>
+            <h3>Tin Thể Thao >></h3>
             <?php
             $sql = "select * from tin_tuc where Loai_Tin = 'TheThao' order by MST desc limit 5";
             $result = mysqli_query($conn, $sql);
