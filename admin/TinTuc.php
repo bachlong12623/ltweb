@@ -1,3 +1,8 @@
+<?php
+session_start();
+if(!isset($_SESSION['username']))
+header("Location: login.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,12 +19,13 @@
 	if (isset($_POST['add'])) {
 		$hinhanh = $_POST['Hinhanh'];
 		$tieude = $_POST['TieuDe'];
+		$thoigian = date("d/m/Y");
 		$noidung = $_POST['NoiDung'];
 		$loaitin = $_POST['LoaiTin'];
 		echo $loaitin;
 
-$sql = "INSERT INTO `tin_tuc` (`MST`, `Loai_Tin`, `Hinh_Anh`, `Tieu_De`, `Noi_Dung`)
-VALUES (NULL, '$loaitin', '$hinhanh', '$tieude', '$noidung')";
+$sql = "INSERT INTO `tin_tuc` (`MST`, `Loai_Tin`, `Hinh_Anh`, `Tieu_De`,`Thoi_Gian`,`Noi_Dung`)
+VALUES (NULL, '$loaitin', '$hinhanh', '$tieude','$thoigian', '$noidung')";
 		if ($conn->query($sql)) {
 			echo "<script>alert('Thêm Thành Công!');</script>";
 		} else {

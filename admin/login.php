@@ -3,7 +3,7 @@
 session_start();
 header('Content-Type: text/html; charset=UTF-8');
 if (isset($_POST['dangnhap'])) {
-  include('conn.php');
+  include('../connect/conn.php');
   $username = addslashes($_POST['txtUsername']);
   $password = addslashes($_POST['txtPassword']);
   if (!$username || !$password) {
@@ -25,7 +25,7 @@ if (isset($_POST['dangnhap'])) {
  
 //Lưu tên đăng nhập
 $_SESSION['username'] = $username;
-echo "Xin chào " . $username . ". Bạn đã đăng nhập thành công. <a href='index.html'>Về trang chủ</a>";
+echo "Xin chào " . $username . ". Bạn đã đăng nhập thành công. <a href=admin.php>Về trang chủ</a>";
 die();
 }
 

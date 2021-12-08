@@ -14,15 +14,13 @@ require '../connect/conn.php';
 </head>
 
 <body>
-    
+
     <?php
     include "../block/header.php";
     ?>
-    <div class= container>
+    <div class=container>
         
     </div>
-     
-
 </body>
 
 </html>

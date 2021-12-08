@@ -1,6 +1,7 @@
    <?php
-    $dstin = laytin(5, $conn);
-    while ($tin = mysqli_fetch_array($dstin)) {
+    $sql = "select * from tin_tuc order by MST desc limit 10";
+    $result = mysqli_query($conn, $sql);
+    while ($tin = mysqli_fetch_array($result)) {
     ?>
      <div class=fix>
        <img src="<?php echo $tin['Hinh_Anh'] ?>" alt="">
