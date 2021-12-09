@@ -14,7 +14,7 @@ require 'connect/conn.php';
 </head>
 
 <body>
-    
+
     <?php
     include "block/header.php";
     ?>
@@ -29,7 +29,7 @@ require 'connect/conn.php';
                 <div class=fixed>
                     <img src="<?php echo $tin['Hinh_Anh'] ?>" alt="">
                     <div>
-                        <a href="Body/Chi_Tiet_Tin.php?id=<?php echo $tin['MST'] ?>"><b><?php echo $tin['Tieu_De']; ?></b></a>
+                        <a href="Chi_Tiet_Tin.php?id=<?php echo $tin['MST'] ?>"><b><?php echo $tin['Tieu_De']; ?></b></a>
                     </div>
                 </div>
             <?php
@@ -52,7 +52,7 @@ require 'connect/conn.php';
                 <div class=fixed>
                     <img src="<?php echo $tin['Hinh_Anh'] ?>" alt="">
                     <div>
-                        <a href="Body/Chi_Tiet_Tin.php?id=<?php echo $tin['MST'] ?>"><b><?php echo $tin['Tieu_De']; ?></b></a>
+                        <a href="Chi_Tiet_Tin.php?id=<?php echo $tin['MST'] ?>"><b><?php echo $tin['Tieu_De']; ?></b></a>
                     </div>
                 </div>
             <?php
@@ -60,6 +60,9 @@ require 'connect/conn.php';
             ?>
         </div>
     </div>
+    <?php
+        require 'bot.php';
+     ?>
 
 </body>
 

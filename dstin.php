@@ -1,10 +1,8 @@
 <?php
 require 'connect/conn.php';
 $loaitin = $_GET['loaitin'];
-echo $loaitin;
 $sql = "SELECT * FROM tin_tuc WHERE `Loai_Tin` = '$loaitin'";
 $result = mysqli_query($conn, $sql);
-print_r($result);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,16 +21,16 @@ print_r($result);
     <?php
     include "block/header.php";
     while ($tin = mysqli_fetch_array($result)) {
-            ?>
-                <div class=fixed>
-                    <img src="<?php echo $tin['Hinh_Anh'] ?>" alt="">
-                    <div>
-                        <a href="Body/Chi_Tiet_Tin.php?id=<?php echo $tin['MST'] ?>"><b><?php echo $tin['Tieu_De']; ?></b></a>
-                    </div>
-                </div>
-            <?php
-            }
-            ?>
+    ?>
+        <div class=fixed>
+            <img src="<?php echo $tin['Hinh_Anh'] ?>" alt="">
+            <div>
+                <a href="Chi_Tiet_Tin.php?id=<?php echo $tin['MST'] ?>"><b><?php echo $tin['Tieu_De']; ?></b></a>
+            </div>
+        </div>
+    <?php
+    }
+    ?>
 </body>
 
 </html>
