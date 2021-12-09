@@ -9,7 +9,7 @@
                             <li><a href="dstin.php?loaitin=TheThao">Thể thao</a></li>
                             <li><a href="dstin.php">Giải trí</a></li>
                             <li><a href="dstin.php">Y tế</a></li>
-                            <li><a href="dstin.php">Thế giới</a></li>
+                            <li><a href="dstin.php?loaitin=TheGioi">Thế giới</a></li>
                             <li><a href="dstin.php">Thương mại</a></li>
                         </ul>
                     </div>

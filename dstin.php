@@ -1,7 +1,8 @@
 <?php
 require 'connect/conn.php';
 $loaitin = $_GET['loaitin'];
-$sql = 'SELECT * FROM tin_tuc WHERE Loai_Tin = "TheThao"';
+echo $loaitin;
+$sql = "SELECT * FROM tin_tuc WHERE `Loai_Tin` = '$loaitin'";
 $result = mysqli_query($conn, $sql);
 print_r($result);
 ?>
