@@ -19,8 +19,7 @@ require '../connect/conn.php';
     include "../block/header.php";
     ?>
     <div class=container>
-        
-    </div>
+    </div> 
 </body>
 
 </html>
