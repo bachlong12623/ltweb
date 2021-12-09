@@ -22,7 +22,6 @@ header("Location: login.php");
 		$thoigian = date("d/m/Y");
 		$noidung = $_POST['NoiDung'];
 		$loaitin = $_POST['LoaiTin'];
-		echo $loaitin;
 
 $sql = "INSERT INTO `tin_tuc` (`MST`, `Loai_Tin`, `Hinh_Anh`, `Tieu_De`,`Thoi_Gian`,`Noi_Dung`)
 VALUES (NULL, '$loaitin', '$hinhanh', '$tieude','$thoigian', '$noidung')";
@@ -48,7 +47,7 @@ VALUES (NULL, '$loaitin', '$hinhanh', '$tieude','$thoigian', '$noidung')";
 			</div>
 			<div class="TT">
 				<label for="NoiDung">Noi_Dung</label>
-				<input name="NoiDung" class="form-control" placeholder="Nội Dung">
+				<textarea  style="width:500px; height:500px;" name="NoiDung" class="form-control" placeholder="Nội Dung" ></textarea>
 			</div>
 			<label for="tripName">Loai tin: </label>
 

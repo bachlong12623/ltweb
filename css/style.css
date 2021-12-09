@@ -63,11 +63,12 @@ a {
 .demuc {
     width: 600px;
 }
-.bob{
-    height: 15px;
 
+.bob {
+    height: 15px;
 }
-#menu a:hover{
+
+#menu a:hover {
     color: red;
-    text-decoration-line: underline ;
+    text-decoration-line: underline;
 }
