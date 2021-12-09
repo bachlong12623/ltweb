@@ -22,16 +22,40 @@ $row = mysqli_fetch_array($query);
     <?php
     include "block/header.php";
     ?>
-    <div class=container>
-      <div>
-          <h1><?php echo $row['Tieu_De'] ?></h1>
-      </div>
-      <?php echo $row['Thoi_Gian'] ?>
-      <img src="<?php echo $row['Hinh_Anh'] ?>" alt="">
-      <div>
-      <?php echo $row['Noi_Dung'] ?>
-      </div>
-
+    <div style="border: 1px;width: 50%;margin-left: auto;margin-right: auto;">
+        <h1><?php echo $row['Tieu_De'] ?></h1>
+        <img src="<?php echo $row['Hinh_Anh'] ?>" alt=""><br>
+        <?php echo $row['Noi_Dung'] ?><br>     
+        <?php echo $row['Thoi_Gian']?>
+    </div>
+    <div class="footer-background">
+        <div class="title">
+            <h1>LIÊN HỆ</h1>
+        </div>
+        <div class="nav-footer">
+            <div>
+                <h3>TIN TỨC 24h</h3> <br><br>
+                <P>
+                    Văn phòng đại diện TP.CT <br>
+                    Địa chỉ: <a href="">phường An Hòa, quận Ninh Kiều, thành phố Cần Thơ</a> <br>
+                    Phone: 0334348565
+                </P>
+            </div>
+            <div>
+                <p>
+                    Liên hệ đăng tin tức<br><br>
+                    hung@gmail.com <br>
+                    0233434856
+                </p>
+            </div>  
+            <div>
+                <p>
+                    Liên hệ nhờ hỗ trợ<br><br>
+                    bao@gmail.com <br>
+                    0336548565
+                </p>
+            </div>
+        </div>
     </div>
 </body>
 
