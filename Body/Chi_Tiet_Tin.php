@@ -1,5 +1,9 @@
 <?php
 require '../connect/conn.php';
+$id = $_GET['id'];
+$sql = "SELECT * FROM tin_tuc where MST = $id";
+$query = mysqli_query($conn, $sql);
+$row = mysqli_fetch_array($query);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +23,15 @@ require '../connect/conn.php';
     include "../block/header.php";
     ?>
     <div class=container>
-        
+      <div>
+          <h1><?php echo $row['Tieu_De'] ?></h1>
+      </div>
+      <?php echo $row['Thoi_Gian'] ?>
+      <img src="<?php echo $row['Hinh_Anh'] ?>" alt="">
+      <div>
+      <?php echo $row['Noi_Dung'] ?>
+      </div>
+
     </div>
 </body>
 
