@@ -65,5 +65,9 @@ a {
 }
 .bob{
     height: 15px;
-    
+
+}
+#menu a:hover{
+    color: red;
+    text-decoration-line: underline ;
 }

@@ -1,5 +1,5 @@
 <?php
-require '../connect/conn.php';
+require 'connect/conn.php';
 $id = $_GET['id'];
 $sql = "SELECT * FROM tin_tuc where MST = $id";
 $query = mysqli_query($conn, $sql);
@@ -13,14 +13,14 @@ $row = mysqli_fetch_array($query);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/css_tin.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/css_tin.css">
 </head>
 
 <body>
 
     <?php
-    include "../block/header.php";
+    include "block/header.php";
     ?>
     <div class=container>
       <div>

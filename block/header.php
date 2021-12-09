@@ -6,11 +6,11 @@
                     <div class="nav-menu">
                         <ul id="menu">
                             <li><a href="/ltweb">Trang chủ</a></li>
-                            <li><a href="index.php?url=datve">Thể thao</a></li>
-                            <li><a href="index.php?url=huongdan">Giải trí</a></li>
-                            <li><a href="index.php?url=dangki">Y tế</a></li>
-                            <li><a href="index.php?url=lienhe">Thế giới</a></li>
-                            <li><a href="index.php?url=lienhe">Thương mại</a></li>
+                            <li><a href="dstin.php?loaitin=TheThao">Thể thao</a></li>
+                            <li><a href="dstin.php">Giải trí</a></li>
+                            <li><a href="dstin.php">Y tế</a></li>
+                            <li><a href="dstin.php">Thế giới</a></li>
+                            <li><a href="dstin.php">Thương mại</a></li>
                         </ul>
                     </div>
                 </div>
