@@ -23,9 +23,9 @@ $row = mysqli_fetch_array($query);
     include "block/header.php";
     ?>
     <div style="border: 1px;width: 50%;margin-left: auto;margin-right: auto;">
-        <h1><?php echo $row['Tieu_De'] ?></h1>
-        <img src="<?php echo $row['Hinh_Anh'] ?>" alt=""><br>
-        <?php echo $row['Noi_Dung'] ?><br>     
+        <h1><?php echo $row['Tieu_De'] ?></h1><br>
+        <img src="<?php echo $row['Hinh_Anh'] ?>" alt=""><br><br>
+        <?php echo $row['Noi_Dung'] ?><br><br>     
         <?php echo $row['Thoi_Gian']?>
     </div>
     <div class="footer-background">
