@@ -86,3 +86,7 @@ body {
 .nav-footer>div>p>a {
     color: #fff;
 }
+.Big {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+}
